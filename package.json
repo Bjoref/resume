@@ -3,12 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "npm run assembly && vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "assembly": "copy-files-from-to && sass src/scss/main.scss public/main.css"
   },
+  "copyFiles": [
+    {
+      "from": "src/index.html",
+      "to": "public/index.html"
+    },
+    {
+      "from": "src/favicon.ico",
+      "to": "public/favicon.ico"
+    }
+  ],
   "dependencies": {
+    "copy-files-from-to": "^3.9.1",
     "core-js": "^3.8.3",
+    "html2pdf.js": "^0.10.1",
     "vue": "^3.2.13"
   },
   "devDependencies": {
