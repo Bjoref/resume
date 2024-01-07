@@ -1,0 +1,12 @@
+.category-name {
+    &__content {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        padding: 3px 0;
+    }
+
+    &__h3 {
+        color: var(--main-color);
+    }
+}

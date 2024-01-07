@@ -1,6 +1,6 @@
 <template>
   <div class="header__content">
-    <img class="header__img" src="../../img/photo.jpg" alt="">
+    <img class="header__img" src="../../img/user-default.svg" alt="user">
   </div>
 </template>
 

@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "npm run assembly && vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "npm run assembly && vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "assembly": "copy-files-from-to && sass src/scss/main.scss public/main.css"
+    "assembly": "copy-files-from-to && sass src/scss/main.scss public/main.css",
+    "sasswatch": "sass --watch src/scss/.:public/",
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run sasswatch\""
   },
   "copyFiles": [
     {
@@ -16,12 +18,25 @@
     {
       "from": "src/favicon.ico",
       "to": "public/favicon.ico"
+    },
+    {
+      "from": "src/fonts/Ubuntu.woff",
+      "to": "public/fonts/Ubuntu.woff"
+    },
+    {
+      "from": "src/fonts/Ubuntu.woff2",
+      "to": "public/fonts/Ubuntu.woff2"
+    },
+    {
+      "from": "src/img/*",
+      "to": "public/img/"
     }
   ],
   "dependencies": {
     "copy-files-from-to": "^3.9.1",
     "core-js": "^3.8.3",
     "html2pdf.js": "^0.10.1",
+    "run-parallel": "^1.2.0",
     "vue": "^3.2.13"
   },
   "devDependencies": {
