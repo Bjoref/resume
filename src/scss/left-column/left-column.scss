@@ -1,0 +1,7 @@
+.left-column {
+    &__content {
+        width: 30%;
+        border-right: 2px solid var(--second-color);
+        // border-left: 2px solid var(--second-color);
+    }
+}

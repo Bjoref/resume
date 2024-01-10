@@ -1,5 +1,5 @@
 <template>
-    <div class="leftColumnContent">
+    <div class="left-column__content">
         <LeftColumnHeader />
 
         <Contacts/>
@@ -23,7 +23,7 @@ import Skills from './UI/Skills.vue'
 
 
 export default {
-    name: 'App',
+    name: 'LeftColumn',
     components: {
         LeftColumnHeader,
         Contacts,

@@ -1,12 +1,13 @@
 .category-name {
     &__content {
-        background-color: black;
         display: flex;
         justify-content: center;
         padding: 3px 0;
+        border-top: 2px solid var(--second-color);
+        border-bottom: 2px solid var(--second-color);
     }
 
     &__h3 {
-        color: var(--main-color);
+        color: var(--second-color);
     }
 }

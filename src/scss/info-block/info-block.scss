@@ -1,0 +1,78 @@
+.info-block {
+    &__h3 {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__content {
+        &-main {
+            display: flex;
+        }
+    }
+
+    &__left-column {
+        width: 30%;
+    }
+
+    &__right-column {
+        width: 70%;
+    }
+
+    &__course-text {
+        font-size: 13px;
+        padding: 0;
+        margin-bottom: 10px;
+        list-style-type: none;
+    }
+
+    &__time-text {
+        color: grey;
+        font-size: 12px;
+    }
+
+    &__list-img {
+        width: 8px;
+        height: 8px;
+        margin-right: 5px;
+    }
+
+    &__h4 {
+        margin-bottom: 10px;
+    }
+
+    &__span {
+        color: grey;
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+    &__icon {
+        margin-right: 10px;
+        padding-bottom: 5px;
+    }
+
+    &__job {
+        &-title {
+            margin-bottom: 10px;
+        }
+
+        &-responsibilities-title {
+            margin-bottom: 5px;
+        }
+
+        &-responsibilities {
+            margin-bottom: 10px;
+            padding: 0;
+            font-size: 13px;
+
+            &-item {
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}

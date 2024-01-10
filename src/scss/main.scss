@@ -3,7 +3,11 @@
 @import './contacts/contacts';
 @import './category-name/category-name';
 @import './skills/skills.scss';
+@import './left-column/left-column';
+@import './right-column/right-column';
+@import './info-block/info-block';
 
 :root {
-	--main-color: #41B974;
+	--main-color: #161824;
+	--second-color: #C0C0C0;
 }

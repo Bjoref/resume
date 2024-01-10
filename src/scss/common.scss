@@ -1,7 +1,21 @@
 .container {
 	width: 210mm;
 	margin: 0 auto;
+	color: var(--second-color);
+	background-color: var(--main-color);
+	box-shadow: 0 10px 10px grey;
+	height: 296.8mm;
+	box-sizing: border-box;
 }
+
+hr {
+	border-color: var(--second-color);
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+  }
 
 body {
 	margin: 0;
@@ -16,7 +30,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
 	margin: 0;
 }
 

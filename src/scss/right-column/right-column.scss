@@ -1,0 +1,49 @@
+.right-column {
+    &__content {
+        width: 70%;
+        padding: 20px 20px 0;
+    }
+
+    &__name {
+        margin-bottom: 20px;
+    }
+
+    &__job-title {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    &__info-list {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 10px;
+        color: grey;
+    }
+
+    &__about-text {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    &__info-item {
+        margin-left: -5px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+
+            & p {
+                padding-right: 10px;
+                border-right: 1px solid;
+            }
+        }
+    }
+
+    &__img {
+        margin-right: 5px;
+    }
+
+}
